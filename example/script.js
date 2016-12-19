@@ -1,12 +1,21 @@
 var canvas = document.getElementById("sandbox");
 var context = canvas.getContext("2d");
-var square,circle;
-//context.fillRect(50,25,200,250);
-square = new Path2D();
-square.moveTo(50,50);
-square.lineTo(250,50);
+var line = new Path2D();
+line.moveTo(0,0);
+line.lineTo(300,300);
+/*line.moveTo(0,300);
+line.lineTo(300,0);
+line.moveTo(150,0);
+line.lineTo(150,300);
+line.moveTo(0,150);
+line.lineTo(300,150);*/
 
-context.stroke(square);
-circle = new Path2D();
-circle.arc(150,150,100,0,222);
-context.fill(circle);
+//line.arc(150,150,100,0,2*Math.PI);
+
+
+context.lineWidth = 5;
+context.stroke(line);
+context.fillStyle = "red";
+context.fillRect(0,0,200,200);
+context.fillStyle = "rgba(0,255,0,0.5)";
+context.fillRect(100,100,200,200);
