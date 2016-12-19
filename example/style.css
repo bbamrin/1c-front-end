@@ -1,0 +1,18 @@
+.div{
+  background-color:red;
+}
+body,html{
+  margin:0;
+  height:100%;
+
+}
+.FlexContainer{
+  diplay:flex;
+  align-items:center;
+  justify-content:centr;
+
+}
+
+canvas{
+  border: 1px solid black;
+}
