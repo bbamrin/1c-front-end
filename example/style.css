@@ -6,10 +6,10 @@ body,html{
   height:100%;
 
 }
-.FlexContainer{
-  diplay:flex;
+body{
+  display:flex;
   align-items:center;
-  justify-content:centr;
+  justify-content:center;
 
 }
 
