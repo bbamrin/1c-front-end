@@ -3,77 +3,21 @@
 <head>
   <meta charset= "utf-8">
   <title>JS</title>
+  <style>
+  html,body{
+    height: 100%;
+    margin: auto;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
 </head>
 <body>
-  <canvas height="300" width="300" id = "sandbox">
-    <script>
-    var dict = {key: "value"};
-    dict == {key: " value"};
-    var dict1 = dict;
-    console.log(dict1 == dict);
-    //подстроки
-    var strin = "qwerty yy ygy rr ";
-    var mod;
-    console.log(strin[0] + strin[1]);
-    // Индекс вхождения
-    console.log(strin.indexOf("qwerty"));
-    console.log(strin.lastIndexOf("t"));
-    //разбиение на массив по разделителю
-    var arr = strin.split(" ");
-    console.log(arr);
-    //замена
-    var modification = strin.replace("yy","qwerty");
-    console.log(modification);
-    //выделение подстроки
-    var start = 10;
-    var length = 3;
-    console.log(strin.substr(start,length));
-    //приведение в нижний или верхний регистр
-    console.log(strin.toUpperCase());
-    console.log(strin.toLowerCase());
-    //Удаление пробелов в начале и в конце строки
-    mod = strin.trim();
-    console.log(strin);
-    console.log(mod);
-    //Математические
-    //Возведение в степень
-    console.log(Math.pow(2,-3));
-    //кв. корень
-    console.log(Math.sqrt(25));
-    //округление
-    console.log(Math.ceil(1.25));
-    console.log(Math.round(1.25));
-    //Сигнум
-    console.log(Math.sign(42));
-    console.log(Math.sign(0));
-    console.log(Math.sign(-42));
-    //минимум и максимум
-    console.log(Math.min(2,1,0));
-    console.log(Math.max(2,1,0));
-    //итеративные
-    var array = [1, 2, 3, 4, 5];
-    array.map(function(x){
-      return x*2;
-    });
-    array.filter(function(x)
-  {
-    return x%2 == 1;
-  });
-  var copy = [];
-  array.forEach(function(x){
-    copy.unshift(x);
-  });
-  //сортировка и разворот
-  var array1 = [11,004,0,8];
-  array1.sort();
-  array1.reverse();
-  //тернарный оператор
-  //<условие> ? <выражение true> <выражение false>
-  function getVerdict(t){
-    return t > 0 ? "вода": "лед";
-  }
-  getVerdict(32);
-  
+  <input type = "text" id = "text">
+    <script src = "script.js">
     </script>
 </body>
 </html>
