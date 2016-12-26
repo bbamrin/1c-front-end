@@ -11,12 +11,30 @@
     dict == {key: " value"};
     var dict1 = dict;
     console.log(dict1 == dict);
-
-
-
-
-
-
+    //подстроки
+    var strin = "qwerty yy ygy rr ";
+    var mod;
+    console.log(strin[0] + strin[1]);
+    // Индекс вхождения
+    console.log(strin.indexOf("qwerty"));
+    console.log(strin.lastIndexOf("t"));
+    //разбиение на массив по разделителю
+    var arr = strin.split(" ");
+    console.log(arr);
+    //замена
+    var modification = strin.replace("yy","qwerty");
+    console.log(modification);
+    //выделение подстроки
+    var start = 10;
+    var length = 3;
+    console.log(strin.substr(start,length));
+    //приведение в нижний или верхний регистр
+    console.log(strin.toUpperCase());
+    console.log(strin.toLowerCase());
+    //Удаление пробелов в начале и в конце строки
+    mod = strin.trim();
+    console.log(strin);
+    console.log(mod);
     </script>
 </body>
 </html>
